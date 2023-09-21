@@ -1,5 +1,6 @@
 *{
     overflow-x: hidden;
+    margin: 0;
 }
 html{
     scroll-behavior: smooth;
@@ -44,6 +45,7 @@ width: 750px;
 .right ul li img{
     height: 39px;
     width: 42px;
+    padding-top: .5rem;
 }
 .right ul {
     display: flex;
@@ -64,17 +66,19 @@ width: 750px;
 }
 
 .container{
-    
-    height: 95vh;
-    width: 98vw;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+
 .logo p{
     font-family: sora;
     font-weight: bold;
     font-size: 36px;
     margin-top: 0;
 }
+
 .logo{
     
     text-align: center;
@@ -82,7 +86,6 @@ width: 750px;
 }
 .form{
 font-family: poppins;
-position: relative;
 top: 4px;
 left: 614px;
 }
@@ -99,11 +102,13 @@ left: 614px;
     width: 197px;
     padding: 1rem;
     border-radius: 10px;
+    border: #7B9691 solid 2px;
 }
 #pts{
     width: 100px;
     padding: 1rem;
     border-radius: 10px;
+    border: #7B9691 solid 2px;
 }
 #img{
     border: 2px solid black;
@@ -136,7 +141,7 @@ input[type=file]::file-selector-button{
     height: 200px;
     padding: 20px;
     border-radius: 10px;
-    border: 2px solid #555;
+    border: 2px solid #7B9691;
     color: #444;
     cursor: pointer;
     transition: background .2s ease-in-out, border .2s ease-in-out;
@@ -173,9 +178,7 @@ input[type=file]::file-selector-button{
         width: 10.5rem;
         padding: .8rem 1rem;
         font-weight: 500;
-    
-           
-        
+        border: none;
 }
 .map__iframe {
     display: flex;
