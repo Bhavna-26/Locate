@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Locate</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <nav>
-        <div class="left">
-            ERecycleBin
-        </div>
-        <div class="right">
+  <nav>
+    <div class="left">
+      ERecycleBin
+    </div>
+    <div class="right">
       <ul>
         <li>Home</li>
         <li>About Us</li>
@@ -22,31 +24,45 @@
           <img src="./images/person.png" alt="">
         </li>
       </ul>
-        </div>
-    </nav>
-    <div class="container">
-      <div class="logo">
+    </div>
+  </nav>
+  <div class="container">
+    <div class="logo">
       <img src="./images/image 8.png" alt="">
-      <p>Locate facility</p></div>
-      <div class="form">
-        <div class="item">
+      <p>Locate facility</p>
+    </div>
+    <div class="form">
+      <div class="item">
         <label for="#loc">Locate:</label>
-        <input type="text"id="loc"></div>
-        <div class="item">
+        <input type="text" id="loc">
+        <button type="button" onclick="getInputValue();" id="btn">Enter</button>
+      </div>
+
+      <div class="item">
         <!-- <label for="#img">Upload image:</label>
         
         <input type="file"id="img"> -->
-    
+
         <label for="images" class="drop-container" id="dropcontainer">
           <span class="drop-title">Upload image here</span>
           or
           <input type="file" id="images" accept="image/*" required>
         </label>
       </div>
-        <div class="item">
-<label for="#pts">Estimated points:</label>
-<input type="text"id="pts"></div>
+      <div class="item">
+        <label for="#pts">Estimated points:</label>
+        <input type="text" id="pts">
       </div>
     </div>
+  
+  </div>
+  
+    <iframe id="map" class="map__iframe">
+      Requested resource not found
+    </iframe>
+
+  <script src="index.js
+    "></script>
 </body>
+
 </html>
