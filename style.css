@@ -1,6 +1,12 @@
 *{
     overflow-x: hidden;
 }
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: poppins;
+}
 .left{
     
     width: 234px;
@@ -49,7 +55,7 @@ width: 750px;
 }
 .right ul li{
     list-style: none;
-    font-size: 18px;
+
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 500;
@@ -61,6 +67,7 @@ width: 750px;
     
     height: 90vh;
     width: 98vw;
+    overflow: hidden;
 }
 .logo p{
     font-family: sora;
@@ -89,10 +96,14 @@ left: 614px;
     margin-top: 46px;
 }
 #loc{
-    width: 249px;
+    width: 197px;
+    padding: 1rem;
+    border-radius: 10px;
 }
 #pts{
     width: 100px;
+    padding: 1rem;
+    border-radius: 10px;
 }
 #img{
     border: 2px solid black;
@@ -147,13 +158,24 @@ input[type=file]::file-selector-button{
     text-align: center;
     transition: color .2s ease-in-out;
 }
-#btn{
-    border-radius: 10px;
+.btn{
+    /* border-radius: 10px;
     background-color: #4CAF50;
     font-size: 15px;
     padding: 2px 21px;
     color: white;
-    border: none;
+    border: none; */
+    font-size: 1rem;
+        background-color: #009A7E;
+        border-radius: 20px;
+        color: #fff;
+        text-align: center;
+        width: 10.5rem;
+        padding: .8rem 1rem;
+        font-weight: 500;
+    
+           
+        
 }
 .map__iframe {
     display: flex;
@@ -164,4 +186,92 @@ input[type=file]::file-selector-button{
     align-items: center;
     justify-content: center;
     display: none;
+    margin-top: 1rem;
+}
+label{
+    font-size: 1.5rem;
+}
+.footer {
+    height: 100%;
+    margin: 0;
+    background-color: #000;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.footer_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding: 1rem;
+}
+
+.footer_elements {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: left;
+    text-decoration: none;
+}
+
+.footer_right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    padding: 1rem;
+    height: auto;
+}
+
+#header {
+    padding-bottom: 1rem;
+    font-size: large;
+    font-weight: 600;
+}
+
+.element {
+    text-align: left;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+
+
+.mainLoginInput::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-family: 'Poppins', sans-serif;
+}
+
+.contacts {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input_fields {
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright {
+    padding: 3rem;
+    font-size: 1rem;
+}
+.ft{
+    padding: 0.5rem;
+        border-radius: 10px;
+}
+.submit_btn button{
+    margin-left: 0.5rem;
+}
+#specific{
+    position: relative;
+    top: 1rem;
+    left: 7rem;
 }
